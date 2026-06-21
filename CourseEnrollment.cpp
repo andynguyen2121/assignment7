@@ -252,9 +252,53 @@ int main()
     printStudentInfo(fullName, email, currentCourse, sid, hours);
     // PART 4 DEMO: Access one namespace member with full prefix
     // cout << EnrollmentSystem::... 
-    printCourse(ENGLISH); // use full namespace so the complier doesn't error
+    printCourse(ENGLISH);
+    cout << endl;
+
  
     return 0;
 
-    /**/
+    /* Input and Output
+    
+    @andynguyen2121 ➜ /workspaces/assignment7 (main) $ g++ -std=c++17 -Wall -o enroll CourseEnrollment.cpp 
+    @andynguyen2121 ➜ /workspaces/assignment7 (main) $ ./enroll 
+    =====================================
+    Welcome! 
+    =====================================
+
+    Enter first name: Andy
+    Enter last name: Nguyen
+    Full Name: Andy Nguyen
+    Name length: 11
+    First name extracted: Andy
+    First initial: A
+    Space found at index: 4
+    Enter email username (e.g. jsmith): anguyen
+    Nguyen comes before Smith
+    Enter course (english/math/history/cpp/biology/art): history
+    You selected: U.S. History
+    Math was assigned to currentCourse
+    Next course after MATH: U.S. History
+    All courses: 
+    English Composition
+    College Algebra
+    U.S. History
+    C++ Programming
+    General Biology
+    Art Appreciation
+    MATH comes before CPP
+
+    Enter credit hours: 4
+    Tuition cost: $600.00
+
+    --- Enrollment Summary ---
+    Name: Andy Nguyen
+    Student ID: 10045
+    Email: anguyen@SanJac.edu
+    Course: U.S. History
+    Credit Hours: 4.00
+    Tuition: $600.00
+    English Composition
+    
+    */
 }
