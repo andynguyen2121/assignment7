@@ -133,11 +133,9 @@ void EnrollmentSystem::printStudentInfo(string fullName, string email, courseTyp
 int main()
 {
     // --- Welcome banner (use string concatenation) ---
-    string line = "=====================================";
+    string line = "==============";
     // TODO: Build and print a welcome banner using + operator.
-    cout << line << endl;
-    cout << " Welcome! " << endl;
-    cout << line << endl << endl;
+    cout << line + " Welcome! " + line << endl;
  
     // --- PART 3: String operations ---
     string firstName, lastName, fullName;
@@ -262,10 +260,7 @@ int main()
     
     @andynguyen2121 ➜ /workspaces/assignment7 (main) $ g++ -std=c++17 -Wall -o enroll CourseEnrollment.cpp 
     @andynguyen2121 ➜ /workspaces/assignment7 (main) $ ./enroll 
-    =====================================
-    Welcome! 
-    =====================================
-
+    ============== Welcome! ==============
     Enter first name: Andy
     Enter last name: Nguyen
     Full Name: Andy Nguyen
@@ -288,16 +283,16 @@ int main()
     Art Appreciation
     MATH comes before CPP
 
-    Enter credit hours: 4
-    Tuition cost: $600.00
+    Enter credit hours: 3
+    Tuition cost: $450.00
 
     --- Enrollment Summary ---
     Name: Andy Nguyen
     Student ID: 10045
     Email: anguyen@SanJac.edu
     Course: U.S. History
-    Credit Hours: 4.00
-    Tuition: $600.00
+    Credit Hours: 3.00
+    Tuition: $450.00
     English Composition
     
     */
