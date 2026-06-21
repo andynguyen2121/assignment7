@@ -250,7 +250,7 @@ int main()
     printStudentInfo(fullName, email, currentCourse, sid, hours);
     // PART 4 DEMO: Access one namespace member with full prefix
     // cout << EnrollmentSystem::... 
-    printCourse(ENGLISH);
+    EnrollmentSystem::printCourse(ENGLISH);
     cout << endl;
 
  
